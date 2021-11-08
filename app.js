@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 require('dotenv').config()
 
 app.get('/', (req, res) => {
-  res.send(`FOO=${process.env.BAH}`)
+  res.send(`FOO=${process.env.FOO}`)
 })
 
 app.listen(port, () => {
